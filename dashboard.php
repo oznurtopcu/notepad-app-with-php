@@ -25,7 +25,7 @@ require_once 'db-conn.php';
             <div class="login-form d-flex justify-content-center mt-5">
                 <div class="card">
                     <div class="card-header text-center">Note App</div>
-                    <div class="card-body" style="width: 200px">
+                    <div class="card-body" style="width: 275px">
                         <?php
                         if ($_SESSION["id"] == null){
                             echo "Oturum sona erdi. Lütfen tekrar giriş yapınız.";
@@ -33,10 +33,10 @@ require_once 'db-conn.php';
                         }else{
                             ?>
                         <form action="create-note.php">
-                            <button type="submit" class="btn btn-primary d-grid gap-2 mx-auto mb-2">Not Ekle</button>
+                            <button type="submit" class="btn btn-outline-secondary fw-bold d-grid gap-2 mb-2 mx-auto">Not Ekle</button>
                         </form>
                         <form action="note-history.php">
-                            <button type="submit" class="btn btn-primary d-grid gap-2 mx-auto mb-4">Notlarım</button>
+                            <button type="submit" class="btn btn-outline-secondary fw-bold d-grid gap-2 mx-auto mb-4">Notlarım</button>
                         </form>
                         <form action="index.php">
                             <button type="submit" class="btn btn-primary d-grid gap-2 mx-auto">Çıkış</button>

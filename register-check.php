@@ -15,7 +15,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-$stmt = $conn->prepare("SELECT * FROM user_table WHERE email =?");
+$stmt = $conn->prepare("SELECT email FROM user_table WHERE email =?");
 $stmt->bindParam(1, $email);
 $stmt->execute();
 
